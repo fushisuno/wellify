@@ -7,13 +7,14 @@ body {
 ul {
     list-style: none;
     font-weight: bold;
+   
 }
 a {
     text-decoration: none;
 }
 a:hover{
     cursor: pointer;
-    color: rgb(0, 195, 255);
+    color: #A84448;
 }
 
 button {
@@ -21,28 +22,31 @@ button {
     border-radius: 8px;
     font-weight: bold;
     border: 0;
-    background: #1d61dd;
+    background: #A84448;
     color: white;
-    font-family: 'Popins', sans-serif;
+    font-family: 'Poppins', sans-serif;
     letter-spacing: 0.1rem;
 }
 button:hover {
     cursor: pointer;
-    background: #123d8f;
+    background: #7A3E65;
 }
 
 header{
     background: no-repeat center/cover url("./img/back.png");
-    height: calc(90vh);
+    height: calc(100vh);
 }
 
 header nav{
     display: flex;
     justify-content: space-between;
     margin: auto 90px;
+    font-size: 1.15rem;
 }
 header nav p a{
-    color: rgb(255, 255, 255);
+    position: absolute;
+    left: 8%;
+    color: white;
 }
 
 header nav ul{
@@ -52,7 +56,7 @@ header nav ul li {
     margin: 0 15px;
 }
 header nav ul li a {
-    color: rgb(255, 255, 255);
+    color: white;
 }
 
 
@@ -64,7 +68,11 @@ header nav p {
     max-width: 800px;
     margin: 150px auto;
     text-align: center;
-    color: rgb(255, 255, 255);
+    color: white;
+}
+.header-content p{
+    margin-left: 15%;
+    max-width: 550px;
 }
 
 .header-content h1 {
@@ -72,24 +80,104 @@ header nav p {
     font-size: 3rem;
 }
 
-.imgs{
-    display: flex; justify-content: space-around;
-    background-color: rgba(233, 233, 233, 0.788);
+.doencas .doencas_title {
+    width: 100%;
+    text-align: center;
+    margin:25px 0;
+    font-size: 3rem;
+    color: white;
 }
-.imgs ul{
+.doencas {
+    width: 100%;
+    margin-left: 0;
+    background: #7A3E65;
+}
+.doencas .doencas_card {
     display: flex;
+    margin: auto;
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.doencas .card-img {
+    margin-top: 5px;
+    width: 140px;
+    border-radius: 24px 0 0 0;
 }
 
-.imgs ul li img{
-    width: 30%;
-    justify-content: center;
+.doencas .card {
+    width: auto;
+    background: #F6E1C3;
+    border-radius: 24px 0;
+    margin: 25px;
+    position: relative;
+}
+
+
+
+
+.doencas .card-content {
+    padding: 0 15px;
+}
+
+.doencas .card-content ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+.doencas .card-content ul li {
+    font-size: 0.6rem;
+    display: flex;
     align-items: center;
+    margin: 3px 0;
+    color: black;
+    font-weight: bold;
 }
-.imgs ul li img:hover{
-    cursor: pointer;
-    transition: .3s;
-    opacity: 40%;
+.doencas .card-content ul a {
+    font-size: 0.9rem;
+    margin-left: 10%;
+    margin-top: 5%;
+    color: black;
+}.doencas .card-content ul a:hover{
+    color: #A84448;
 }
+
+.doencas .card-content li svg {
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.doencas .card-content h1 {
+    font-size: 1rem;
+}
+
+.doencas .card .card-tag-top {
+    position: absolute;
+    right: 0;
+    top: 15px;
+    background: #A84448;
+    border-radius: 8px 0 0 8px;
+    padding: 5px 10px;
+}
+
+.doencas .card .card-tag-bottom {
+    position: absolute;
+    left: 0;
+    top: 160px;
+    background: #1d61dd;
+    border-radius: 0 8px 8px 0;
+    padding: 5px 10px;
+}
+
+.doencas .card .card-tag p {
+    margin:0;
+    font-size: 0.8rem;
+    color: white;
+    font-weight: bold;
+}
+
 
 
 section{

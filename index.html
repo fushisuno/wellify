@@ -3,8 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wellify</title>
-    <link rel="stylesheet" href="style.css"> <!-- Estilo CSS para a página -->
+    <script src="https://unpkg.com/feather-icons"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -22,22 +25,135 @@
         </nav>
         <div id="home" class="header-content">
             <h1>Doenças Alimentares</h1>
-            <p>As doenças alimentares são cada vez mais comuns, e podem ser causadas pela ingestão de alimentos contaminados, pela falta de nutrientes essenciais ou pelo excesso de gordura e açúcar na dieta. Essas doenças podem ter consequências graves, como problemas digestivos, deficiências nutricionais, obesidade e até mesmo doenças crônicas, como diabetes e doenças cardíacas. Por isso, é essencial conhecer os sinais e sintomas das doenças alimentares, e tomar medidas para preveni-las.</p>
+            <p>As doenças alimentares são cada vez mais comuns, e podem ser causadas pela ingestão de alimentos
+                contaminados, pela falta de nutrientes essenciais ou pelo excesso de gordura e açúcar na dieta. Essas
+                doenças podem ter consequências graves, como problemas digestivos, deficiências nutricionais, obesidade
+                e até mesmo doenças crônicas, como diabetes e doenças cardíacas. Por isso, é essencial conhecer os
+                sinais e sintomas das doenças alimentares, e tomar medidas para preveni-las.</p>
             <button>Saiba Mais</button>
         </div>
     </header>
-    <div class="imgs">
-        <ul>
-            <li><img src="./img/cerebro.png" alt="Cérebro" title="Cérebro"></li>
-            <li><img src="./img/irritacao.png" alt="Pele" title="Pele"></li>
-            <li><img src="./img/coracao.png" alt="Coração" title="Coração"></li>
-            <li><img src="./img/sistema-imunologico.png" alt="Sistema Imunológico" title="Sistema Imunológico"></li>
-            <li><img src="./img/estomago.png" alt="" title=""></li>
-            <li><img src="./img/gota-de-sangue.png" alt="" title=""></li>
-            <li><img src="./img/figado.png" alt="" title=""></li>
-            <li><img src="./img/intestino.png" alt="" title=""></li>
-        </ul>
-    </div>
+    <section id="doencas" class="doencas">
+        <!-- <h1 class="doencas_title">Sua mãe</h1> -->
+        <div class="doencas_card">
+            <div class="card">
+                <div class="card-tag card-tag-top">
+                    <p>Alerta</p>
+                </div>
+                
+                <img src="./img/cerebro.png" alt="Cérrebro" class="card-img">
+                <div class="card-content">
+                    <h1>Cérebro</h1>
+                    <ul>
+                        <li><i data-feather="clock"></i>Disfunções</li>
+                        <li><i data-feather="frown"></i>Emocional</li>
+                        <li><i data-feather="users"></i>Autoimagem</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-tag card-tag-top">
+                    <p>Alerta</p>
+                </div>
+                <img src="./img/irritacao.png" alt="Cérrebro" class="card-img">
+                <div class="card-content">
+                    <h1>Pele</h1>
+                    <ul>
+                        <li><i data-feather="meh"></i>Dermatite </li>
+                        <li><i data-feather="map"></i>Urticária</li>
+                        <li><i data-feather="coffee"></i>Acne</li>
+                        <a href="#home">Saiba Mais</a>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-tag card-tag-top">
+                    <p>Alerta</p>
+                </div>
+            
+                <img src="./img/coracao.png" alt="Cérrebro" class="card-img">
+                <div class="card-content">
+                    <h1>Coração</h1>
+                    <ul>
+                        <li><i data-feather="smile"></i>Alegria</li>
+                        <li><i data-feather="map"></i>Rotas</li>
+                        <li><i data-feather="coffee"></i>Café Grátis</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-tag card-tag-top">
+                    <p>Alerta</p>
+                </div>
+                <img src="./img/sistema-imunologico.png" alt="Cérrebro" class="card-img">
+                <div class="card-content">
+                    <h1>Imunológico</h1>
+                    <ul>
+                        <li><i data-feather="smile"></i>Alegria</li>
+                        <li><i data-feather="map"></i>Rotas</li>
+                        <li><i data-feather="coffee"></i>Café Grátis</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-tag card-tag-top">
+                    <p>Alerta</p>
+                </div>
+                <img src="./img/estomago.png" alt="Cérrebro" class="card-img">
+                <div class="card-content">
+                    <h1>Estômago</h1>
+                    <ul>
+                        <li><i data-feather="smile"></i>Alegria</li>
+                        <li><i data-feather="map"></i>Rotas</li>
+                        <li><i data-feather="coffee"></i>Café Grátis</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-tag card-tag-top">
+                    <p>Alerta</p>
+                </div>
+                <img src="./img/gota-de-sangue.png" alt="Cérrebro" class="card-img">
+                <div class="card-content">
+                    <h1>Sangue</h1>
+                    <ul>
+                        <li><i data-feather="smile"></i>Alegria</li>
+                        <li><i data-feather="map"></i>Rotas</li>
+                        <li><i data-feather="coffee"></i>Café Grátis</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-tag card-tag-top">
+                    <p>Alerta</p>
+                </div>
+                <img src="./img/figado.png" alt="Cérrebro" class="card-img">
+                <div class="card-content">
+                    <h1>Fígado</h1>
+                    <ul>
+                        <li><i data-feather="smile"></i>Alegria</li>
+                        <li><i data-feather="map"></i>Rotas</li>
+                        <li><i data-feather="coffee"></i>Café Grátis</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-tag card-tag-top">
+                    <p>Alerta</p>
+                </div>
+                <img src="./img/intestino.png" alt="Cérrebro" class="card-img">
+                <div class="card-content">
+                    <h1>Intestino</h1>
+                    <ul>
+                        <li><i data-feather="smile"></i>Alegria</li>
+                        <li><i data-feather="map"></i>Rotas</li>
+                        <li><i data-feather="coffee"></i>Café Grátis</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
     <section id="home">
         <div class="container">
             <h1>Bem-vindo ao nosso site sobre Doenças Alimentares</h1>
@@ -143,5 +259,9 @@
             </div>
         </div>
     </footer>
+    <script>
+        feather.replace();
+    </script>
 </body>
+
 </html>
