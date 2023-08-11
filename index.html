@@ -1,267 +1,43 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wellify</title>
-    <script src="https://unpkg.com/feather-icons"></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Cozinha</title>
 </head>
-
 <body>
     <header>
-        <nav>
-            <p><a href="">Wellify</a></p>
-            <ul class="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#doencas">Doenças Alimentares</a></li>
-                <li><a href="#receitas">Receitas</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#sobre-nos">Sobre Nós</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
-        <div id="home" class="header-content">
-            <h1>Doenças Alimentares</h1>
-            <p>As doenças alimentares são cada vez mais comuns, e podem ser causadas pela ingestão de alimentos
-                contaminados, pela falta de nutrientes essenciais ou pelo excesso de gordura e açúcar na dieta. Essas
-                doenças podem ter consequências graves, como problemas digestivos, deficiências nutricionais, obesidade
-                e até mesmo doenças crônicas, como diabetes e doenças cardíacas. Por isso, é essencial conhecer os
-                sinais e sintomas das doenças alimentares, e tomar medidas para preveni-las.</p>
-            <button>Saiba Mais</button>
-        </div>
+        <nav class="nav-bar">
+            <div class="logo">
+                <h1>Cozinha Consciente</h1>
+                <img src="" alt="">
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Informações</a></li>
+                    <li><a href="">Login</a></li>
+                    <li><a href="">Cadastro</a></li>
+                </ul>
+            </div>
+        </nav> 
+        <hr>
     </header>
-    <section id="doencas" class="doencas">
-        <!-- <h1 class="doencas_title">Sua mãe</h1> -->
-        <div class="doencas_card">
-            <div class="card">
-                <div class="card-tag card-tag-top">
-                    <p>Alerta</p>
-                </div>
-                
-                <img src="./img/cerebro.png" alt="Cérrebro" class="card-img">
-                <div class="card-content">
-                    <h1>Cérebro</h1>
-                    <ul>
-                        <li><i data-feather="clock"></i>Disfunções</li>
-                        <li><i data-feather="frown"></i>Emocional</li>
-                        <li><i data-feather="users"></i>Autoimagem</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-tag card-tag-top">
-                    <p>Alerta</p>
-                </div>
-                <img src="./img/irritacao.png" alt="Cérrebro" class="card-img">
-                <div class="card-content">
-                    <h1>Pele</h1>
-                    <ul>
-                        <li><i data-feather="meh"></i>Dermatite </li>
-                        <li><i data-feather="map"></i>Urticária</li>
-                        <li><i data-feather="coffee"></i>Acne</li>
-                        <a href="#home">Saiba Mais</a>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-tag card-tag-top">
-                    <p>Alerta</p>
-                </div>
-            
-                <img src="./img/coracao.png" alt="Cérrebro" class="card-img">
-                <div class="card-content">
-                    <h1>Coração</h1>
-                    <ul>
-                        <li><i data-feather="smile"></i>Alegria</li>
-                        <li><i data-feather="map"></i>Rotas</li>
-                        <li><i data-feather="coffee"></i>Café Grátis</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-tag card-tag-top">
-                    <p>Alerta</p>
-                </div>
-                <img src="./img/sistema-imunologico.png" alt="Cérrebro" class="card-img">
-                <div class="card-content">
-                    <h1>Imunológico</h1>
-                    <ul>
-                        <li><i data-feather="smile"></i>Alegria</li>
-                        <li><i data-feather="map"></i>Rotas</li>
-                        <li><i data-feather="coffee"></i>Café Grátis</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-tag card-tag-top">
-                    <p>Alerta</p>
-                </div>
-                <img src="./img/estomago.png" alt="Cérrebro" class="card-img">
-                <div class="card-content">
-                    <h1>Estômago</h1>
-                    <ul>
-                        <li><i data-feather="smile"></i>Alegria</li>
-                        <li><i data-feather="map"></i>Rotas</li>
-                        <li><i data-feather="coffee"></i>Café Grátis</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-tag card-tag-top">
-                    <p>Alerta</p>
-                </div>
-                <img src="./img/gota-de-sangue.png" alt="Cérrebro" class="card-img">
-                <div class="card-content">
-                    <h1>Sangue</h1>
-                    <ul>
-                        <li><i data-feather="smile"></i>Alegria</li>
-                        <li><i data-feather="map"></i>Rotas</li>
-                        <li><i data-feather="coffee"></i>Café Grátis</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-tag card-tag-top">
-                    <p>Alerta</p>
-                </div>
-                <img src="./img/figado.png" alt="Cérrebro" class="card-img">
-                <div class="card-content">
-                    <h1>Fígado</h1>
-                    <ul>
-                        <li><i data-feather="smile"></i>Alegria</li>
-                        <li><i data-feather="map"></i>Rotas</li>
-                        <li><i data-feather="coffee"></i>Café Grátis</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-tag card-tag-top">
-                    <p>Alerta</p>
-                </div>
-                <img src="./img/intestino.png" alt="Cérrebro" class="card-img">
-                <div class="card-content">
-                    <h1>Intestino</h1>
-                    <ul>
-                        <li><i data-feather="smile"></i>Alegria</li>
-                        <li><i data-feather="map"></i>Rotas</li>
-                        <li><i data-feather="coffee"></i>Café Grátis</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
 
-    </section>
-    <section id="home">
+    <section>
         <div class="container">
-            <h1>Bem-vindo ao nosso site sobre Doenças Alimentares</h1>
-            <p>Informações confiáveis sobre doenças alimentares e receitas adequadas para diferentes restrições
-                alimentares</p>
-            <a href="#receitas" class="btn">Ver Receitas</a>
-        </div>
-    </section>
-    <section id="doencas">
-        <div class="container">
-            <h2>Doenças Alimentares</h2>
-            <p>Aqui você encontra informações detalhadas sobre diversas doenças alimentares, incluindo intolerâncias,
-                alergias e outras restrições alimentares. Nossos artigos são baseados em evidências científicas e
-                escritos por especialistas na área de nutrição e saúde.</p>
-            <div class="grid">
-                <div class="card">
-                    <img src="doenca1.jpg" alt="Imagem ilustrativa da Doença Alimentar 1">
-                    <h3>Intolerância à lactose</h3>
-                    <p>Informações detalhadas sobre a intolerância à lactose, causas, sintomas, diagnóstico e dicas de
-                        alimentação adequada.</p>
-                </div>
-                <div class="card">
-                    <img src="doenca2.jpg" alt="Imagem ilustrativa da Doença Alimentar 2">
-                    <h3>Doença celíaca</h3>
-                    <p>Informações sobre a doença celíaca, uma doença autoimune causada pela intolerância ao glúten, com
-                        dicas de alimentação sem glúten e receitas adequadas.</p>
-                </div>
-                <div class="card">
-                    <img src="doenca3.jpg" alt="Imagem ilustrativa da Doença Alimentar 3">
-                    <h3>Alergia a Frutos do Mar</h3>
-                    <p>Informações sobre a alergia a frutos do mar, sintomas, diagnóstico e opções de substituição de
-                        ingredientes em receitas de frutos do mar.</p>
-                </div>
+            <div class="img_cont">
+                <img src="./img/telainicial.jpg" alt="Alimentação Saudavél">
             </div>
-        </div>
-    </section>
-    <section id="receitas">
-        <div class="container">
-            <h2>Receitas Adequadas para Restrições Alimentares</h2>
-            <p>Aqui você encontra deliciosas receitas adequadas para diferentes restrições alimentares, incluindo
-                receitas sem glúten, sem lactose, sem frutos do mar e outras opções para atender às necessidades de
-                pessoas com doenças alimentares.</p>
-            <div class="grid">
-                <div class="card">
-                    <img src="receita1.jpg" alt="Imagem ilustrativa de uma Receita sem Glúten">
-                    <h3>Pão de Aveia sem Glúten</h3>
-                    <p>Uma receita deliciosa de pão de aveia sem glúten, perfeita para pessoas com doença celíaca ou
-                        sensibilidade ao glúten.</p>
-                </div>
-                <div class="card">
-                    <img src="receita2.jpg" alt="Imagem ilustrativa de uma Receita sem Lactose">
-                    <h3>Lasanha de Legumes sem Lactose</h3>
-                    <p>Uma deliciosa lasanha de legumes feita sem lactose, ideal para pessoas com intolerância à lactose
-                        ou alergia ao leite.</p>
-                </div>
-                <div class="card">
-                    <img src="receita3.jpg" alt="Imagem ilustrativa de uma Receita sem Frutos do Mar">
-                    <h3>Risoto de Cogumelos sem Frutos do Mar</h3>
-                    <p>Um delicioso risoto de cogumelos preparado sem frutos do mar, perfeito para pessoas com alergia a
-                        frutos do mar.</p>
-                </div>
+            <div class="text_cont">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, nulla sunt. Quidem maiores minus inventore, deserunt voluptatibus distinctio eaque tempora a aperiam nemo maxime expedita velit perspiciatis beatae ea ipsum.
+                Veniam reiciendis quibusdam cum alias accusamus natus ratione incidunt magnam. Eaque obcaecati eos odio molestias earum, necessitatibus ipsum omnis ex recusandae quos vitae tempora rerum enim excepturi aliquid accusamus optio?
+                Sint vitae quos excepturi optio neque temporibus minus blanditiis fuga veritatis corporis, iure obcaecati, dolorum, corrupti cumque voluptate libero accusantium? Non quis vero reprehenderit suscipit, blanditiis ullam animi delectus exercitationem?</p>
             </div>
+            <input type="button" value="Saiba Mais" id="inBut">
         </div>
     </section>
-    <section id="blog">
-        <div class="container">
-            <h2>Blog</h2>
-            <p>Fique por dentro das últimas novidades e informações sobre doenças alimentares, receitas, dicas de
-                alimentação e muito mais em nosso blog. Nossos artigos são escritos por nutricionistas e profissionais
-                de saúde.</p>
-            <a href="#receitas" class="btn">Ver Blog</a>
-        </div>
-    </section>
-    <section id="sobre-nos">
-        <div class="container">
-            <h2>Sobre Nós</h2>
-            <p>Somos uma equipe de nutricionistas e profissionais de saúde dedicados a fornecer informações confiáveis e
-                receitas adequadas para pessoas com doenças alimentares. Nossos artigos são baseados em evidências
-                científicas e nosso objetivo é ajudar as pessoas a se alimentarem de forma saudável, mesmo com
-                restrições alimentares.</p>
-        </div>
-    </section>
-    <section id="contato">
-        <div class="container">
-            <h2>Contato</h2>
-            <p>Entre em contato conosco para dúvidas, sugestões ou parcerias. Preencha o formulário abaixo ou nos envie
-                um e-mail para [email protected]</p>
-            <form action="contato.php" method="post">
-                <input type="text" name="nome" placeholder="Nome" required>
-                <input type="email" name="email" placeholder="E-mail" required>
-                <textarea name="mensagem" placeholder="Mensagem" required></textarea>
-                <input type="submit" value="Enviar">
-            </form>
-        </div>
-    </section>
-    <footer>
-        <div class="container">
-            <p>© 2023 Nome do Site. Todos os direitos reservados.</p>
-            <div class="social-media">
-                <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook"></i></a>
-                <a href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-            </div>
-        </div>
-    </footer>
-    <script>
-        feather.replace();
-    </script>
 </body>
-
 </html>
